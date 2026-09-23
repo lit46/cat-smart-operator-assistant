@@ -1,0 +1,46 @@
+[
+  {
+    "id": "learn-001",
+    "title": "Hydraulic System Basics",
+    "type": "module",
+    "duration": 8,
+    "machineModel": "CAT 320",
+    "relatedTask": null,
+    "relatedAlertType": "hydraulicTemp",
+    "description": "How the hydraulic system regulates heat and pressure, and what to do when temperature trends up.",
+    "status": "recommended"
+  },
+  {
+    "id": "learn-002",
+    "title": "Excavator Safety Fundamentals",
+    "type": "module",
+    "duration": 10,
+    "machineModel": "CAT 320",
+    "relatedTask": "task-002",
+    "relatedAlertType": null,
+    "description": "Core safe-operation practices for excavation work, including swing radius and load awareness.",
+    "status": "recommended"
+  },
+  {
+    "id": "learn-003",
+    "title": "Safe Slope Operation",
+    "type": "video",
+    "duration": 6,
+    "machineModel": "CAT 320",
+    "relatedTask": "task-005",
+    "relatedAlertType": null,
+    "description": "Working safely on graded terrain and recognizing early signs of slope instability.",
+    "status": "recommended"
+  },
+  {
+    "id": "learn-004",
+    "title": "Reading Cooling System Warnings",
+    "type": "quiz",
+    "duration": 4,
+    "machineModel": "CAT 320",
+    "relatedTask": null,
+    "relatedAlertType": "hydraulicTemp",
+    "description": "A quick check on interpreting hydraulic and coolant temperature alerts correctly.",
+    "status": "completed"
+  }
+]

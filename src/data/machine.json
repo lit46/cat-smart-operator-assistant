@@ -1,0 +1,69 @@
+{
+  "id": "machine-001",
+  "model": "CAT 320",
+  "assetId": "EXC-2048",
+  "operator": "Alex Rivera",
+  "status": "running",
+  "safetyStatus": "attention",
+  "engineHours": 4821,
+  "fuelLevel": 68,
+  "updatedAt": "2026-09-23T07:12:00Z",
+  "sensors": [
+    {
+      "id": "hydraulicTemp",
+      "label": "Hydraulic Temperature",
+      "value": 94,
+      "unit": "\u00b0C",
+      "normalRange": [70, 90],
+      "status": "warning"
+    },
+    {
+      "id": "coolantTemp",
+      "label": "Coolant Temperature",
+      "value": 88,
+      "unit": "\u00b0C",
+      "normalRange": [70, 95],
+      "status": "safe"
+    },
+    {
+      "id": "hydraulicPressure",
+      "label": "Hydraulic Pressure",
+      "value": 2450,
+      "unit": "psi",
+      "normalRange": [2000, 2600],
+      "status": "safe"
+    },
+    {
+      "id": "fuelLevel",
+      "label": "Fuel Level",
+      "value": 68,
+      "unit": "%",
+      "normalRange": [15, 100],
+      "status": "safe"
+    },
+    {
+      "id": "batteryVoltage",
+      "label": "Battery Voltage",
+      "value": 12.6,
+      "unit": "V",
+      "normalRange": [12.2, 14.4],
+      "status": "safe"
+    },
+    {
+      "id": "engineRPM",
+      "label": "Engine RPM",
+      "value": 1650,
+      "unit": "rpm",
+      "normalRange": [700, 2200],
+      "status": "safe"
+    }
+  ],
+  "activeAlert": {
+    "id": "alert-001",
+    "sensor": "hydraulicTemp",
+    "severity": "warning",
+    "message": "Hydraulic temperature is higher than normal.",
+    "recommendedAction": "Reduce hydraulic load and inspect the cooling system before continuing.",
+    "createdAt": "2026-09-23T07:10:00Z"
+  }
+}

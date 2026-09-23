@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-cat-paper text-cat-black font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    letter-spacing: 0.01em;
+  }
+
+  /* Visible keyboard focus, always */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 3px solid #171412;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Diagonal hazard stripe, used sparingly as a structural accent
+     (e.g. critical banners) — not decoration on every card. */
+  .hazard-edge {
+    background-image: repeating-linear-gradient(
+      135deg,
+      #171412,
+      #171412 10px,
+      #ffc72c 10px,
+      #ffc72c 20px
+    );
+  }
+}
